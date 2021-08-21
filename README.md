@@ -17,6 +17,6 @@ This repository contains implementation of **Trie Data Structure** using Linked 
   <p align="center"><em>Chat suggestions</em></p>
   
 ## 3. Autocomplete suggestion
-  This is the general applications for **Trie Data Structure**. Autocomplete is it's main appication. So, this part shows the suggestion for the searches being made by the user based on what he/she is typing.
+  This is the general application for **Trie Data Structure**. Autocomplete is it's main and most widely used appication. This feature shows the suggestion for the searches being made by the user based on what he/she is typing.
   <p align="center"><img src="https://i.imgur.com/VLIICtM.jpg" alt="Incorrect"></p>
   <p align="center"><em>Autocomplete Suggestion</em></p>
