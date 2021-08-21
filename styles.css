@@ -1,0 +1,232 @@
+:root {
+  --lightGray: #d0d1d3;
+  --gray: #b6b1b4;
+  --lightPink: #ead3db;
+  --darkPink: #fc6e85;
+  --medPink: #faa5a9;
+  --veryLightGray: #e1e2e4;
+
+  /*for loading*/
+  --s-loader-width: 20px;
+  --s-loader-height: var(--s-loader-width);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > * {
+  flex: 1 1 50%;
+}
+
+.container {
+  min-width: 50%;
+  min-height: 50vh;
+  display: flex;
+}
+
+.barsDiv {
+  background-image: linear-gradient(180deg, var(--lightGray) 40%, var(--gray));
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  border-color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#searchBar {
+  position: relative;
+  border-radius: 24px;
+  top: 7.5%;
+  font-size: 18px;
+}
+
+input {
+  border: none;
+  width: 50%;
+  height: 15%;
+  outline: none;
+  padding-left: 20px;
+  background-color: var(--veryLightGray);
+}
+
+#searchIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    135deg,
+    var(--medPink),
+    var(--darkPink) 60%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 24%;
+  top: 22%;
+  z-index: 10;
+}
+img {
+  width: 20px;
+  height: auto;
+}
+
+#srchSuggestions {
+  position: absolute;
+  top: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 28.5%;
+  overflow: hidden;
+  /* align-items: center; */
+  justify-content: flex-start;
+  background-color: var(--veryLightGray);
+}
+
+li {
+  list-style: none;
+}
+
+#srchSuggestions > li {
+  margin: 15px;
+  min-height: 25px;
+}
+
+#srchSuggestions > li:hover {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+/*ChatBox design start*/
+#chatBar {
+  position: relative;
+  top: 55%;
+  width: 75%;
+  border-radius: 14px;
+}
+
+#sendIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    135deg,
+    var(--medPink),
+    var(--darkPink) 60%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 69%;
+  left: 35%;
+  z-index: 10;
+}
+
+#chatSuggestions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 39%;
+  background-color: var(--veryLightGray);
+  position: absolute;
+  top: 29%;
+  left: 55.5%;
+  border-radius: 10px;
+}
+
+#chatSuggestions > div {
+  flex: 1 1;
+  /* text-align: center; */
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  /* line-height: 5px; */
+  /* width: 98%; */
+
+  /* margin: 10px; */
+}
+
+#chatSuggestions > div:last-child {
+  border: none;
+}
+
+.first {
+  width: 90%;
+  text-align: center;
+}
+
+.second {
+  padding: 2px 5px;
+  background: #ccc;
+  /* width: 10%; */
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.chatContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+/*spelling check design*/
+#spellDiv{
+  justify-content: center;
+}
+
+/*for rotating loading*/
+.spinning-loader {
+  width: var(--s-loader-width);
+  height: var(--s-loader-height);
+  /* border: 5px solid var(--s-loader-border-color-trans); */
+  border: 5px solid var(--darkPink);
+  /* border-left-color: var(--s-loader-border-color-full); */
+  border-left-color: var(--lightPink);
+  border-radius: 50%;
+  background: transparent;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  position: relative;
+  top: -13%;
+  left: 22.5%;
+}
+
+/* .noDisplay{
+  display: none;
+} */
+
+#spellImage{
+  position: relative;
+  top: -12%;
+  left: 22.5%;
+}
+
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
