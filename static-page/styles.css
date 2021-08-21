@@ -39,7 +39,6 @@ body > * {
   display: flex;
   width: 100%;
   height: 100%;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -90,7 +89,6 @@ img {
   width: 50%;
   max-height: 28.5%;
   overflow: hidden;
-  /* align-items: center; */
   justify-content: flex-start;
   background-color: var(--veryLightGray);
 }
@@ -154,16 +152,11 @@ li {
 
 #chatSuggestions > div {
   flex: 1 1;
-  /* text-align: center; */
   min-height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-right: 2px solid black;
-  /* line-height: 5px; */
-  /* width: 98%; */
-
-  /* margin: 10px; */
 }
 
 #chatSuggestions > div:last-child {
@@ -178,7 +171,6 @@ li {
 .second {
   padding: 2px 5px;
   background: #ccc;
-  /* width: 10%; */
   margin-right: 5px;
   cursor: pointer;
 }
@@ -192,29 +184,6 @@ li {
 #spellDiv{
   justify-content: center;
 }
-
-/*for rotating loading*/
-.spinning-loader {
-  width: var(--s-loader-width);
-  height: var(--s-loader-height);
-  /* border: 5px solid var(--s-loader-border-color-trans); */
-  border: 5px solid var(--darkPink);
-  /* border-left-color: var(--s-loader-border-color-full); */
-  border-left-color: var(--lightPink);
-  border-radius: 50%;
-  background: transparent;
-  animation-name: rotate-s-loader;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  position: relative;
-  top: -13%;
-  left: 22.5%;
-}
-
-/* .noDisplay{
-  display: none;
-} */
 
 #spellImage{
   position: relative;
